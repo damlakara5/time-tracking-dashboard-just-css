@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="overlay">
+      <div class="first-box">
+        <div class="person">
+          <img class="pic" src="/images/image-jeremy.png" />
+          <p class="person-text">
+            Report for
+            <span class="name">
+              Jeremy <br />
+              Robson
+            </span>
+          </p>
+        </div>
+        <div class="switch">
+          <btn class="daily">Daily</btn>
+          <p class="weekly">Weekly</p>
+          <p class="Monthly">Monthly</p>
+        </div>
+      </div>
+
+      <section class="box">
+        <div class="div work">
+          <img class="icon" src="/images/icon-work.svg" />
+          <div class="mini-box">Work <span class="dots">...</span></div>
+        </div>
+
+        <div class="div play">
+          <img class="icon" src="/images/icon-play.svg" />
+          <div class="mini-box">Play <span class="dots">...</span></div>
+        </div>
+
+        <div class="div study">
+          <img class="icon" src="/images/icon-study.svg" />
+          <div class="mini-box">Study <span class="dots">...</span></div>
+        </div>
+
+        <div class="div Exercise">
+          <img class="icon" src="/images/icon-exercise.svg" />
+          <div class="mini-box">Exercise <span class="dots">...</span></div>
+        </div>
+
+        <div class="div social">
+          <img class="icon" src="/images/icon-social.svg" />
+          <div class="mini-box">Social <span class="dots">...</span></div>
+        </div>
+
+        <div class="div Self">
+          <img class="icon" src="/images/icon-self-care.svg" />
+          <div class="mini-box">Self Care <span class="dots">...</span></div>
+        </div>
+      </section>
+
+      <!--     <div class="attribution">Coded by <a href="#">Damla KARA</a>.</div>
+ -->
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>

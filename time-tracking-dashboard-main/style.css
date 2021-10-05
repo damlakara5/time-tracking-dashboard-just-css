@@ -1,0 +1,142 @@
+:root {
+  --body-color: hsl(235, 46%, 5%);
+  --box-color: hsl(226, 43%, 10%);
+  --name-color: hsl(246, 80%, 60%);
+  --work-color: hsl(15, 100%, 70%);
+  --play-color: hsl(195, 74%, 62%);
+  --study-color: hsl(348, 100%, 68%);
+  --exercise-color: hsl(145, 58%, 55%);
+  --social-color: hsl(264, 64%, 52%);
+  --selfCare-color: hsl(43, 84%, 65%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: auto;
+  background-color: var(--body-color);
+  color: wheat;
+}
+
+.overlay {
+  position: absolute;
+  width: 70%;
+  top: 25%;
+  left: 15%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-column-gap: 25px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.first-box {
+  position: relative;
+  background-color: var(--box-color);
+  border-radius: 15px;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 10px;
+}
+.person {
+  background-color: var(--name-color);
+  position: absolute;
+  border-radius: 15px;
+  height: 60%;
+  width: 100%;
+  padding: 20px;
+}
+
+.person-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.div {
+  background-color: var(--box-color);
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.mini-box {
+  height: 80%;
+  width: 100%;
+  background-color: var(--box-color);
+  position: absolute;
+  bottom: -6px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.switch {
+  background-color: var(--box-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+}
+
+.work {
+  background-color: var(--work-color);
+}
+
+.play {
+  background-color: var(--play-color);
+}
+
+.study {
+  background-color: var(--study-color);
+}
+
+.Exercise {
+  background-color: var(--exercise-color);
+}
+
+.social {
+  background-color: var(--social-color);
+}
+
+.Self {
+  background-color: var(--selfCare-color);
+}
+
+.icon {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+}
+
+.dots {
+  font-weight: 500;
+  position: absolute;
+  right: 10%;
+  font-size: 20px;
+}
